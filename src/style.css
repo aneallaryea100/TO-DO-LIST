@@ -1,52 +1,52 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('./AlwaysLovely.ttf') format('woff2'),
-      url('./JumpingFlash.ttf') format('woff');
-    font-weight: 600;
-    font-style: normal;
-  }
+  font-family: 'MyFont';
+  src:
+    url('./AlwaysLovely.ttf') format('woff2'),
+    url('./JumpingFlash.ttf') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
 
+.mainnSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  margin: 0 auto;
+}
 
-  .mainnSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
-    margin: 0px auto;
-  }
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 31rem;
+  border-bottom: 1px solid gray;
+}
 
-  .head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 31rem;
-    border-bottom: 1px solid gray;
-  }
+input[type="text"] {
+  width: 31rem;
+  outline: none;
+  border: none;
+  padding: 1rem 0;
+  margin: 0 0;
+  border-bottom: 1px solid gray;
+}
 
-  input[type="text"]{
-    width: 31rem;
-    outline: none;
-    border: none;
-    padding: 1rem 0rem;
-    margin: 0rem 0rem;
-    border-bottom: 1px solid gray;
-  }
+.todoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0;
+  border-bottom: 1px solid gray;
+}
 
-  .todoContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0rem 0rem;
-    border-bottom: 1px solid gray;
-  }
-
-  .clear-field{
-    display: flex;
-    width: 31rem;
-    outline:none;
-    border: none;
-    justify-content: center;
-    padding: 1rem 0rem;
-    margin: 0rem 0rem;
-  }
+.clear-field {
+  display: flex;
+  width: 31rem;
+  outline: none;
+  border: none;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 0 0;
+}
