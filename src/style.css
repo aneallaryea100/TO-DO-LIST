@@ -69,3 +69,9 @@
   text-decoration: line-through;
 }
 
+.describetxt{
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+

@@ -3,6 +3,7 @@ import {showDataStorage} from './showDataStorage.js';
 import {addToLocalStorage} from './addDataToLocalStorage.js';
 import {removeDataFromLocalStorage} from './removeFromLocalStorage.js';
 import { setDataToLocalStorage } from './getSetLocalStorage';
+import { enableEdit, editTask } from './editInput.js';
 
 showDataStorage();
 
@@ -18,24 +19,19 @@ textInput.addEventListener('keypress', e => {
 })
 
  
-
+// remove local stotrage
 document.addEventListener('click', function(e) {
-  console.log('home', e.target.classList);
   if(e.target.classList.contains('fa-trash')){
-    console.log(e.target);
-  console.log(e.target.getAttribute("data-deleteid"));
   let readsv = e.target.getAttribute("data-deleteid");
-  console.log('lop', readsv);
   removeDataFromLocalStorage(readsv);
   showDataStorage();
   }
 })
 
+
+
 document.addEventListener('change', function(e) {
-  console.log('home', e.target.classList);
   if(e.target.classList.contains('checkbox')){
-    let fred = this;
-        console.log(e.target.parentElement, e);
         if(e.target.checked === true){
             document.querySelector(`#t-${e.target.id}`).classList.add('trash-active');
             document.querySelector(`#e-${e.target.id}`).classList.add('edit-disable');
@@ -49,11 +45,12 @@ document.addEventListener('change', function(e) {
 })
 
 document.addEventListener('click', function(e) {
-  console.log('away', e.target.classList);
   if(e.target.classList.contains('fa-ellipsis-vertical')){
-     console.log('edit me now');
-     let shotty = document.querySelector("describetxt");
-     shotty.setAttribute('contenteditable', 'true');
-     console.log('high', shotty);
+     if(e.target.clicked === true){
+      document.querySelector('.describetxt').editTask();
+     }
   }
 })
+
+
+// onclick = 'enableEdit'
