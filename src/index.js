@@ -3,6 +3,8 @@ import showDataStorage from './showDataStorage.js';
 import addToLocalStorage from './addDataToLocalStorage.js';
 import removeDataFromLocalStorage from './removeFromLocalStorage.js';
 import editElement from './editInput.js';
+import checkListBox from './checkBoxTrue.js';
+import clearList from './clearAllField.js';
 
 showDataStorage();
 
@@ -27,8 +29,10 @@ document.addEventListener('click', (e) => {
 });
 
 // checkbox
-document.addEventListener('change', (e) => {
+document.addEventListener('click', (e) => {
   if (e.target.classList.contains('checkbox')) {
+    const Id = Number(e.target.id);
+    const completed = e.target.checked;
     if (e.target.checked === true) {
       document.querySelector(`#t-${e.target.id}`).classList.add('trash-active');
       document.querySelector(`#e-${e.target.id}`).classList.add('edit-disable');
@@ -38,6 +42,7 @@ document.addEventListener('change', (e) => {
       document.querySelector(`#e-${e.target.id}`).classList.remove('edit-disable');
       e.target.nextElementSibling.classList.remove('checkTodo');
     }
+    checkListBox(Id, completed);
   }
 });
 
@@ -45,5 +50,23 @@ document.addEventListener('change', (e) => {
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('describetxt')) {
     event.target.onchange = editElement;
+  }
+});
+
+// check checkbox
+// document.addEventListener('click', (event) => {
+//   if (event.target.classList.contains('checkbox')) {
+//     const Id = Number(event.target.id);
+//     const completed = event.target.checked;
+//     checkListBox(Id, completed);
+//   }
+// });
+
+// clear all checked box
+document.addEventListener('click', (event) => {
+  event.preventDefault();
+  if (event.target.classList.contains('clear-field')) {
+    clearList();
+    showDataStorage();
   }
 });
