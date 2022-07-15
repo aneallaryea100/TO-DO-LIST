@@ -24,7 +24,7 @@
   border-bottom: 1px solid gray;
 }
 
-#textField{
+#textField {
   width: 31rem;
   outline: none;
   border: none;
@@ -51,25 +51,24 @@
   margin: 0 0;
 }
 
-.fa-trash{
+.fa-trash {
   display: none;
 }
-
 
 .trash-active{
   display: block;
 }
 
-.edit-disable{
+.edit-disable {
   display: none;
 }
 
 
-.checkTodo{
+.checkTodo {
   text-decoration: line-through;
 }
 
-.describetxt{
+.describetxt {
   border: none;
   outline: none;
   background-color: #fff;
