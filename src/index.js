@@ -3,7 +3,7 @@ import {showDataStorage} from './showDataStorage.js';
 import {addToLocalStorage} from './addDataToLocalStorage.js';
 import {removeDataFromLocalStorage} from './removeFromLocalStorage.js';
 import { setDataToLocalStorage } from './getSetLocalStorage';
-import { enableEdit, editTask } from './editInput.js';
+import {editElement} from './editInput.js';
 
 showDataStorage();
 
@@ -29,7 +29,7 @@ document.addEventListener('click', function(e) {
 })
 
 
-
+// checkbox
 document.addEventListener('change', function(e) {
   if(e.target.classList.contains('checkbox')){
         if(e.target.checked === true){
@@ -44,13 +44,24 @@ document.addEventListener('change', function(e) {
   }
 })
 
-document.addEventListener('click', function(e) {
-  if(e.target.classList.contains('fa-ellipsis-vertical')){
-     if(e.target.clicked === true){
-      document.querySelector('.describetxt').editTask();
-     }
+// edit input
+document.addEventListener('click', (event)=>{
+  if(event.target.classList.contains('describetxt')){
+    const Id = Number(event.target.id);
+    const value = event.target.value;
+    editElement(Id, value);
   }
 })
+
+// document.addEventListener('click', (event)=>{
+//   if(event.target.classList.contains('checkbox')){
+//     const checkBox = event.target;
+
+//     const value = checkBox.checked;
+
+
+//   }
+// })
 
 
 // onclick = 'enableEdit'
