@@ -1,40 +1,59 @@
 import './style.css';
+import {showDataStorage} from './showDataStorage.js';
+import {addToLocalStorage} from './addDataToLocalStorage.js';
+import {removeDataFromLocalStorage} from './removeFromLocalStorage.js';
+import { setDataToLocalStorage } from './getSetLocalStorage';
 
-// variables declaration
-const todosMainContain = document.querySelector('.todos-container');
+showDataStorage();
 
-const arrayObject = [
-  {
-    description: 'Go to the super market',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Go to the Stadium',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Submit the assignment',
-    completed: false,
-    index: 3,
-  },
-];
+//Add list event
+const textInput = document.querySelector('#textField');
+textInput.addEventListener('keypress', e => {
+  if(e.key === 'Enter' && textInput.value){
+    e.preventDefault();
+    addToLocalStorage(textInput.value);
+    textInput.value = '';
+    showDataStorage();
+  }
+})
 
-const displayTemplate = (display) => {
-  const todoContainer = document.createElement('div');
-  todoContainer.className = 'todoContainer';
-  todoContainer.innerHTML += `
-    <p>
-    <input type="checkbox" class="checkbox" value = "${display.completed}">
-    <span id = "${display.index}">${display.description}</span>
-    </p>
-    <i class="fa-solid fa-ellipsis-vertical"></i>
-    `;
+ 
 
-  return todoContainer;
-};
+document.addEventListener('click', function(e) {
+  console.log('home', e.target.classList);
+  if(e.target.classList.contains('fa-trash')){
+    console.log(e.target);
+  console.log(e.target.getAttribute("data-deleteid"));
+  let readsv = e.target.getAttribute("data-deleteid");
+  console.log('lop', readsv);
+  removeDataFromLocalStorage(readsv);
+  showDataStorage();
+  }
+})
 
-arrayObject.forEach((e) => {
-  todosMainContain.appendChild(displayTemplate(e));
-});
+document.addEventListener('change', function(e) {
+  console.log('home', e.target.classList);
+  if(e.target.classList.contains('checkbox')){
+    let fred = this;
+        console.log(e.target.parentElement, e);
+        if(e.target.checked === true){
+            document.querySelector(`#t-${e.target.id}`).classList.add('trash-active');
+            document.querySelector(`#e-${e.target.id}`).classList.add('edit-disable');
+            e.target.nextElementSibling.classList.add('checkTodo');
+        }else{
+            document.querySelector(`#t-${e.target.id}`).classList.remove('trash-active');
+            document.querySelector(`#e-${e.target.id}`).classList.remove('edit-disable');
+            e.target.nextElementSibling.classList.remove('checkTodo');
+        }
+  }
+})
+
+document.addEventListener('click', function(e) {
+  console.log('away', e.target.classList);
+  if(e.target.classList.contains('fa-ellipsis-vertical')){
+     console.log('edit me now');
+     let shotty = document.querySelector("describetxt");
+     shotty.setAttribute('contenteditable', 'true');
+     console.log('high', shotty);
+  }
+})

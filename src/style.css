@@ -24,7 +24,7 @@
   border-bottom: 1px solid gray;
 }
 
-input[type="text"] {
+#textField{
   width: 31rem;
   outline: none;
   border: none;
@@ -50,3 +50,22 @@ input[type="text"] {
   padding: 1rem 0;
   margin: 0 0;
 }
+
+.fa-trash{
+  display: none;
+}
+
+
+.trash-active{
+  display: block;
+}
+
+.edit-disable{
+  display: none;
+}
+
+
+.checkTodo{
+  text-decoration: line-through;
+}
+
