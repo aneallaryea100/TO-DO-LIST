@@ -1,12 +1,7 @@
-import {setDataToLocalStorage} from './getSetLocalStorage.js';
-
-  export const editElement = (id, value) => {
-    const getfromstorage = JSON.parse(localStorage.getItem('list'));
-
-    getfromstorage.forEach((els) => {
-      if(els.index === id){
-        els.description = value;
-      }
-      localStorage.setItem('list',JSON.stringify(getfromstorage));
-    });
-  };
+export default function editElement() {
+  const getfromStorage = JSON.parse(localStorage.getItem('list'));
+  const Id = Number(this.id);
+  const { value } = this;
+  getfromStorage[Id - 1].description = value;
+  localStorage.setItem('list', JSON.stringify(getfromStorage));
+}

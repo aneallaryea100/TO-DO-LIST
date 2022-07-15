@@ -55,14 +55,13 @@
   display: none;
 }
 
-.trash-active{
+.trash-active {
   display: block;
 }
 
 .edit-disable {
   display: none;
 }
-
 
 .checkTodo {
   text-decoration: line-through;
@@ -73,4 +72,3 @@
   outline: none;
   background-color: #fff;
 }
-
