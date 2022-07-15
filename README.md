@@ -20,7 +20,8 @@ In this project, I will a list of items to be done will be generated dynamically
 * Windows 7 and above, MacOs, linux and android.
 # SET UP
 * Clone this repo : https://github.com/aneallaryea100/TO-DO-LIST.git
-* 
+* Run npm install if you don't have node.js installed on your computer.
+* Run npm run build or npm start in your terminal to get the project running.
 
 # AUTHOR
 👤 Aneal Laryea

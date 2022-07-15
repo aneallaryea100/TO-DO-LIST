@@ -53,15 +53,6 @@ document.addEventListener('click', (event) => {
   }
 });
 
-// check checkbox
-// document.addEventListener('click', (event) => {
-//   if (event.target.classList.contains('checkbox')) {
-//     const Id = Number(event.target.id);
-//     const completed = event.target.checked;
-//     checkListBox(Id, completed);
-//   }
-// });
-
 // clear all checked box
 document.addEventListener('click', (event) => {
   event.preventDefault();
