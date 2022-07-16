@@ -31,8 +31,6 @@ document.addEventListener('click', (e) => {
 // checkbox
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('checkbox')) {
-    const Id = Number(e.target.id);
-    const completed = e.target.checked;
     if (e.target.checked === true) {
       document.querySelector(`#t-${e.target.id}`).classList.add('trash-active');
       document.querySelector(`#e-${e.target.id}`).classList.add('edit-disable');
@@ -42,6 +40,8 @@ document.addEventListener('click', (e) => {
       document.querySelector(`#e-${e.target.id}`).classList.remove('edit-disable');
       e.target.nextElementSibling.classList.remove('checkTodo');
     }
+    const Id = Number(e.target.id);
+    const completed = e.target.checked;
     checkListBox(Id, completed);
   }
 });
