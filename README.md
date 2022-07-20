@@ -18,6 +18,12 @@ In this project, I will a list of items to be done will be generated dynamically
 # Prerequisite
 * Modern Browser.Example: Firefox, chrome.
 * Windows 7 and above, MacOs, linux and android.
+
+# INSTALLATIONS
+* jest
+* babel
+
+
 # SET UP
 * Clone this repo : https://github.com/aneallaryea100/TO-DO-LIST.git
 * Run npm install if you don't have node.js installed on your computer.
@@ -28,6 +34,12 @@ In this project, I will a list of items to be done will be generated dynamically
 * Github: [@aneallaryea](https://github.com/aneallaryea100)
 * LinkdIn: [@aneallaryea](https://www.linkedin.com/in/nii-aneal-84ba7a147)
 * Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+
+# AUTHOR
+👤 Natasha Tatenda Chirombe
+* GitHub: [@NATASHA-ct]((https://github.com/NATASHA-ct)
+* Twitter: [@NatashaChirombe]
+* LinkedIn: Natasha Chirombe
 
 ## 🤝 Contributing
 
