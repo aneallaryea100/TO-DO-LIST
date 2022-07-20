@@ -9,3 +9,5 @@ export default function addToLocalStorage(adda) {
   });
   setDataToLocalStorage(recieveGetDataLocalStorage);
 }
+
+module.exports = addToLocalStorage;

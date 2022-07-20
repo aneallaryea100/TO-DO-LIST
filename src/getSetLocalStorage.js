@@ -1,4 +1,7 @@
-const getDataFromLocalStorage = () => JSON.parse(localStorage.getItem('list')) || [];
+const LIST = JSON.parse(localStorage.getItem('list')) || [];
+
+// const getDataFromLocalStorage = () => JSON.parse(localStorage.getItem('list')) || [];
+const getDataFromLocalStorage = () => LIST;
 
 const setDataToLocalStorage = (el) => {
   // set the index and let it match using the key index value
