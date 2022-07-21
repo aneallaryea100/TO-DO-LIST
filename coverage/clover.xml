@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658381704422" clover="3.2.0">
-  <project timestamp="1658381704423" name="All files">
+<coverage generated="1658421467940" clover="3.2.0">
+  <project timestamp="1658421467941" name="All files">
     <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="14" coveredelements="14" complexity="0" loc="8" ncloc="8" packages="1" files="2" classes="2"/>
     <file name="addDataToLocalStorage.js" path="C:\Users\beach boy\Desktop\WCKD\TO-DO-LIST\src\addDataToLocalStorage.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
