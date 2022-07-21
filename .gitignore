@@ -1,1 +1,5 @@
 node_modules
+
+coverage/lcov-report/prettify.css
+
+coverage/lcov-report/base.css

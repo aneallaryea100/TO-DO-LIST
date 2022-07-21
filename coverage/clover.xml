@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1658441260493" clover="3.2.0">
+  <project timestamp="1658441260493" name="All files">
+    <metrics statements="15" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="6" elements="26" coveredelements="22" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
+    <file name="add_remove.js" path="C:\Users\beach boy\Desktop\WCKD\TO-DO-LIST\src\add_remove.js">
+      <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+    </file>
+    <file name="getSetLocalStorage.js" path="C:\Users\beach boy\Desktop\WCKD\TO-DO-LIST\src\getSetLocalStorage.js">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>
