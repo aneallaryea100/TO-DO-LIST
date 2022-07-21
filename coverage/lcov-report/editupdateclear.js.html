@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for add_remove.js</title>
+    <title>Code coverage report for editupdateclear.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> add_remove.js</h1>
+        <h1><a href="index.html">All files</a> editupdateclear.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">6.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/10</span>
+                <span class='fraction'>1/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">7.14% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/10</span>
+                <span class='fraction'>1/14</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -87,54 +87,69 @@
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { getDataFromLocalStorage, setDataToLocalStorage } from './getSetLocalStorage.js';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function <span class="fstat-no" title="function not covered" >editElement(</span>) {
+  const getfromStorage = <span class="cstat-no" title="statement not covered" >JSON.parse(localStorage.getItem('list'));</span>
+  const Id = <span class="cstat-no" title="statement not covered" >Number(this.id);</span>
+  const { value } = <span class="cstat-no" title="statement not covered" >this;</span>
+<span class="cstat-no" title="statement not covered" >  getfromStorage[Id - 1].description = value;</span>
+<span class="cstat-no" title="statement not covered" >  localStorage.setItem('list', JSON.stringify(getfromStorage));</span>
+}
 &nbsp;
-function removeDataFromLocalStorage(removeStore) {
-  let recieveGetDataLocalStorage = getDataFromLocalStorage();
-  recieveGetDataLocalStorage.forEach((el) =&gt; {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (Number(el.index) === Number(removeStore)) {
-<span class="cstat-no" title="statement not covered" >      recieveGetDataLocalStorage = recieveGetDataLocalStorage</span>
-        .filter(<span class="fstat-no" title="function not covered" >(e</span>l) =&gt; <span class="cstat-no" title="statement not covered" >Number(el.index) !== Number(removeStore))</span>;
+// clear
+function <span class="fstat-no" title="function not covered" >clearList(</span>) {
+  let getfromStorage = <span class="cstat-no" title="statement not covered" >JSON.parse(localStorage.getItem('list'));</span>
+<span class="cstat-no" title="statement not covered" >  getfromStorage = getfromStorage.filter(<span class="fstat-no" title="function not covered" >(e</span>l) =&gt; <span class="cstat-no" title="statement not covered" >el.completed === false)</span>;</span>
+<span class="cstat-no" title="statement not covered" >  localStorage.setItem('list', JSON.stringify(getfromStorage));</span>
+}
+&nbsp;
+// checkbox
+&nbsp;
+function <span class="fstat-no" title="function not covered" >checkListBox(</span>Id, comp) {
+  const getfromStorage = <span class="cstat-no" title="statement not covered" >JSON.parse(localStorage.getItem('list'));</span>
+<span class="cstat-no" title="statement not covered" >  getfromStorage.forEach(<span class="fstat-no" title="function not covered" >(e</span>l) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (el.index === Id) {</span>
+<span class="cstat-no" title="statement not covered" >      el.completed = comp;</span>
     }
   });
-  setDataToLocalStorage(recieveGetDataLocalStorage);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  localStorage.setItem('list', JSON.stringify(getfromStorage));</span>
 }
 &nbsp;
-function addToLocalStorage(adda) {
-  const recieveGetDataLocalStorage = getDataFromLocalStorage();
-  recieveGetDataLocalStorage.push({
-    description: adda,
-    completed: false,
-    index: recieveGetDataLocalStorage.length + 1,
-  });
-  setDataToLocalStorage(recieveGetDataLocalStorage);
-}
-&nbsp;
-module.exports = { removeDataFromLocalStorage, addToLocalStorage };
+module.exports = { editElement, clearList, checkListBox };
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -142,7 +157,7 @@ module.exports = { removeDataFromLocalStorage, addToLocalStorage };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-07-21T22:07:40.403Z
+                at 2022-07-21T22:00:29.762Z
             </div>
         <script src="prettify.js"></script>
         <script>

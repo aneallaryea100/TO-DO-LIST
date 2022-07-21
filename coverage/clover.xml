@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658433793713" clover="3.2.0">
-  <project timestamp="1658433793714" name="All files">
+<coverage generated="1658441260493" clover="3.2.0">
+  <project timestamp="1658441260493" name="All files">
     <metrics statements="15" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="6" elements="26" coveredelements="22" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
     <file name="add_remove.js" path="C:\Users\beach boy\Desktop\WCKD\TO-DO-LIST\src\add_remove.js">
       <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
