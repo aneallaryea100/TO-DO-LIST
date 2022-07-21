@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658360152359" clover="3.2.0">
-  <project timestamp="1658360152359" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="16" coveredelements="16" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
+<coverage generated="1658381426087" clover="3.2.0">
+  <project timestamp="1658381426087" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="14" coveredelements="14" complexity="0" loc="8" ncloc="8" packages="1" files="2" classes="2"/>
     <file name="addDataToLocalStorage.js" path="C:\Users\beach boy\Desktop\WCKD\TO-DO-LIST\src\addDataToLocalStorage.js">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="4" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
       <line num="10" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
     </file>
     <file name="getSetLocalStorage.js" path="C:\Users\beach boy\Desktop\WCKD\TO-DO-LIST\src\getSetLocalStorage.js">
-      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <line num="1" count="1" type="cond" truecount="2" falsecount="0"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="2" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
