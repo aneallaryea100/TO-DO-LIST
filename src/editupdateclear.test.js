@@ -1,18 +1,25 @@
 describe('Test the edit, checkbox and clear list function', () => {
-  test('clear function', () => {
+  test('clear list if checkbox is checked', () => {
     const editstorage = JSON.parse(localStorage.getItem('list')) || [];
     const task = {
       description: 'kaaks',
-      completed: false,
+      completed: true,
       index: 1,
     };
-    editstorage.push(task);
 
-    const editDiv = document.querySelectorAll('.describetxt');
-    expect(editDiv).toHaveLength(0);
+    const clearList = () => {
+      if (task.completed === false) {
+        editstorage.push(task);
+        expect(editstorage).toHaveLength(1);
+      }
+      editstorage.pop();
+      expect(editstorage).toHaveLength(0);
+    };
+
+    clearList();
   });
 
-  test('update checkbox', () => {
+  test('update boolean of checkbox when checked', () => {
     const task = [
       {
         description: 'name1',
@@ -51,7 +58,7 @@ describe('Test the edit, checkbox and clear list function', () => {
     expect(task[1].completed).toBe(false);
   });
 
-  test('editing', () => {
+  test('when the input field is clicked, edit its value', () => {
     const task = [
       {
         description: 'kaaks',
