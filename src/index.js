@@ -35,14 +35,17 @@ document.addEventListener('click', (e) => {
       document.querySelector(`#t-${e.target.id}`).classList.add('trash-active');
       document.querySelector(`#e-${e.target.id}`).classList.add('edit-disable');
       e.target.nextElementSibling.classList.add('checkTodo');
+      const Id = Number(e.target.id);
+      const completed = e.target.checked;
+      checkListBox(Id, completed);
     } else {
       document.querySelector(`#t-${e.target.id}`).classList.remove('trash-active');
       document.querySelector(`#e-${e.target.id}`).classList.remove('edit-disable');
       e.target.nextElementSibling.classList.remove('checkTodo');
+      const Id = Number(e.target.id);
+      const completed = e.target.checked;
+      checkListBox(Id, completed);
     }
-    const Id = Number(e.target.id);
-    const completed = e.target.checked;
-    checkListBox(Id, completed);
   }
 });
 
